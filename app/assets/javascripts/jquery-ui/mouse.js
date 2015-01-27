@@ -1,6 +1,3 @@
-//= require jquery-ui/core
-//= require jquery-ui/widget
-
 /*!
  * jQuery UI Mouse 1.11.2
  * http://jqueryui.com
@@ -17,7 +14,7 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./widget"
+			"jquery-ui/widget"
 		], factory );
 	} else {
 

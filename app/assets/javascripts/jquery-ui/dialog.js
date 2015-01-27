@@ -1,10 +1,3 @@
-//= require jquery-ui/core
-//= require jquery-ui/widget
-//= require jquery-ui/button
-//= require jquery-ui/draggable
-//= require jquery-ui/position
-//= require jquery-ui/resizable
-
 /*!
  * jQuery UI Dialog 1.11.2
  * http://jqueryui.com
@@ -21,13 +14,13 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./core",
-			"./widget",
-			"./button",
-			"./draggable",
+			"jquery-ui/core",
+			"jquery-ui/widget",
+			"jquery-ui/button",
+			"jquery-ui/draggable",
 			"./mouse",
-			"./position",
-			"./resizable"
+			"jquery-ui/position",
+			"jquery-ui/resizable"
 		], factory );
 	} else {
 

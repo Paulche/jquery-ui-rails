@@ -1,5 +1,3 @@
-//= require jquery-ui/core
-
 /*!
  * jQuery UI Datepicker 1.11.2
  * http://jqueryui.com
@@ -16,7 +14,7 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./core"
+			"jquery-ui/core"
 		], factory );
 	} else {
 

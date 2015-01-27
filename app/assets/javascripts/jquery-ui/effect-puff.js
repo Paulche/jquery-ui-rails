@@ -1,6 +1,3 @@
-//= require jquery-ui/effect
-//= require jquery-ui/effect-scale
-
 /*!
  * jQuery UI Effects Puff 1.11.2
  * http://jqueryui.com
@@ -17,8 +14,8 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./effect",
-			"./effect-scale"
+			"jquery-ui/effect",
+			"jquery-ui/effect-scale"
 		], factory );
 	} else {
 

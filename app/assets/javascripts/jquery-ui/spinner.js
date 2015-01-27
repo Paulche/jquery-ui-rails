@@ -1,7 +1,3 @@
-//= require jquery-ui/core
-//= require jquery-ui/widget
-//= require jquery-ui/button
-
 /*!
  * jQuery UI Spinner 1.11.2
  * http://jqueryui.com
@@ -18,9 +14,9 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./core",
-			"./widget",
-			"./button"
+			"jquery-ui/core",
+			"jquery-ui/widget",
+			"jquery-ui/button"
 		], factory );
 	} else {
 

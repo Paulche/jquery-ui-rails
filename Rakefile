@@ -112,12 +112,15 @@ task :javascripts => :submodule do
     basename = File.basename(path)
     dep_modules = get_js_dependencies(basename).map(&method(:remove_js_extension))
     File.open("#{target_ui_dir}/#{basename}", "w") do |out|
-      dep_modules.each do |mod|
-        out.write("//= require jquery-ui/#{mod}\n")
-      end
-      out.write("\n") unless dep_modules.empty?
+      # dep_modules.each do |mod|
+      #   out.write("//= require jquery-ui/#{mod}\n")
+      # end
+      # out.write("\n") unless dep_modules.empty?
       source_code = File.read(path)
       source_code.gsub!('@VERSION', version)
+      dep_modules.each do |mod|
+        source_code.gsub!("./#{mod}","jquery-ui/#{mod}")
+      end
       protect_copyright_notice(source_code)
       out.write(source_code)
     end
@@ -130,6 +133,7 @@ task :javascripts => :submodule do
     File.open("#{target_ui_dir}/#{basename}", "w") do |out|
       source_code = File.read(path)
       source_code.gsub!('@VERSION', version)
+      source_code.gsub!('../datepicker', 'jquery-ui/datepicker')
       protect_copyright_notice(source_code)
       out.write(source_code)
     end

@@ -1,8 +1,3 @@
-//= require jquery-ui/core
-//= require jquery-ui/widget
-//= require jquery-ui/mouse
-//= require jquery-ui/draggable
-
 /*!
  * jQuery UI Droppable 1.11.2
  * http://jqueryui.com
@@ -19,10 +14,10 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./core",
-			"./widget",
-			"./mouse",
-			"./draggable"
+			"jquery-ui/core",
+			"jquery-ui/widget",
+			"jquery-ui/mouse",
+			"jquery-ui/draggable"
 		], factory );
 	} else {
 

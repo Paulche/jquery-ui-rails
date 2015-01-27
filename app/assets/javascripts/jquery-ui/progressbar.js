@@ -1,6 +1,3 @@
-//= require jquery-ui/core
-//= require jquery-ui/widget
-
 /*!
  * jQuery UI Progressbar 1.11.2
  * http://jqueryui.com
@@ -17,8 +14,8 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./core",
-			"./widget"
+			"jquery-ui/core",
+			"jquery-ui/widget"
 		], factory );
 	} else {
 

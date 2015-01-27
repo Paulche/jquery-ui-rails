@@ -1,7 +1,3 @@
-//= require jquery-ui/core
-//= require jquery-ui/widget
-//= require jquery-ui/mouse
-
 /*!
  * jQuery UI Sortable 1.11.2
  * http://jqueryui.com
@@ -18,9 +14,9 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./core",
-			"./mouse",
-			"./widget"
+			"jquery-ui/core",
+			"jquery-ui/mouse",
+			"jquery-ui/widget"
 		], factory );
 	} else {
 

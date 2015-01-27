@@ -1,8 +1,3 @@
-//= require jquery-ui/core
-//= require jquery-ui/widget
-//= require jquery-ui/menu
-//= require jquery-ui/position
-
 /*!
  * jQuery UI Autocomplete 1.11.2
  * http://jqueryui.com
@@ -19,10 +14,10 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./core",
-			"./widget",
-			"./position",
-			"./menu"
+			"jquery-ui/core",
+			"jquery-ui/widget",
+			"jquery-ui/position",
+			"jquery-ui/menu"
 		], factory );
 	} else {
 

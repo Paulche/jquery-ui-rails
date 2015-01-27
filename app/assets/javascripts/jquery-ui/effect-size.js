@@ -1,5 +1,3 @@
-//= require jquery-ui/effect
-
 /*!
  * jQuery UI Effects Size 1.11.2
  * http://jqueryui.com
@@ -16,7 +14,7 @@
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"./effect"
+			"jquery-ui/effect"
 		], factory );
 	} else {
 
